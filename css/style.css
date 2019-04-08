@@ -1,0 +1,985 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Playfair+Display:400,700,900,900i');
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif;*/
+a, a:hover{
+    transition: .6s;
+}
+/*reset css*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Typografy style custom*/
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color:  #333333;
+    padding: 0!important;
+    overflow-x: hidden;
+}
+h1{
+    font-family: 'Playfair Display', serif;
+    color:  #333333;
+    font-size: 58px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    text-align: center;
+}
+h2{
+    font-family: 'Playfair Display', serif;
+    color:  #333333;
+    font-size: 54px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    text-align: center;
+}
+h3{
+    color:  #333333;
+    font-size: 34px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: center;
+}
+h4{
+    font-family: 'Playfair Display', serif;
+    color:  #333333;
+    font-size: 26px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 28px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+h5{
+    color:  #333333;
+    font-size: 20px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: center;
+}
+h6{
+    font-family: 'Playfair Display', serif;
+    color:  #333333;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    text-align: center;
+}
+strong{
+    font-weight: bold;
+}
+ul.mark{
+    background: none;
+}
+ul.mark li{
+    padding-left: 16px;
+    position: relative;
+    padding-bottom: 15px;
+}
+ul.mark li:before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 5px;
+    left: 0;
+    
+    background: #eca393;
+}
+.btn-bg{
+    display: block;
+    background: #eca393;
+    text-transform: uppercase;
+    display: block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+    
+}
+.btn-bg:hover, .btn-bg:focus, .btn-bg:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    cursor: pointer;
+}
+
+/*--> Подключение шрифтов */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+/* <-- */
+.artic-item{text-align: center; padding-top: 10px; margin-bottom: -20px; font-size: 14px;}
+
+/*contact form section start*/
+.contactMainBlock{
+    margin-bottom: 50px;
+}
+.product-item .price-item{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: -15px;
+}
+.product-item .size{
+    background: #eca393;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 15px;
+    padding: 0;
+    opacity: 0.6;
+    transition: .5s;
+    margin: 0 2px;
+}
+.product-item .select-size{
+    opacity: 1;
+    transition: .5s;
+}
+#contact{
+    background: url("../img/elka.jpg") no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+    
+
+}
+.heading-container{
+    margin: 55px 0;
+}
+.heading-container .heading-tagline{
+    font-weight: 300;
+    text-align: center;
+    font-size: 20px;/* Приближение из-за подстановки шрифтов */
+}
+.heading-container .heading-separate{
+    background-color: #eca393;
+    width: 40px;
+    height: 6px;
+    margin: 20px auto;
+}
+.heading-container .section-heading{
+    font-family: 'Playfair Display', serif;
+    font-size: 54px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    text-align: center;
+    margin-top: -10px;
+}
+form{
+    margin-top: 40px;
+    max-width: 417px;
+    width: 100%;
+}
+
+.container-form .contactForm{
+    border: 1px solid #eca393 ;
+    margin: 0px auto;
+    /*margin-right: 50px;*/
+    margin-right: 0;
+    padding: 30px;
+}
+.inputCheck{
+    border: 1px solid #eca393 ;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    max-width: 357px;
+    width: 100%;
+    height: 59px;
+    font-family: 'Open Sans', sans-serif;
+    color: #b1b1b1;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 28px;/* Приближение из-за подстановки шрифтов */
+    padding-left: 15px;
+
+}
+.formComment{
+    border: 1px solid #eca393 ;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+    padding-left: 15px;
+    padding-top: 10px;
+    max-width: 357px;
+    width: 100%;
+    height: 159px;
+    font-family: 'Open Sans', sans-serif;
+    color: #b1b1b1;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 28px; /* Приближение из-за подстановки шрифтов */
+    resize: none;
+}
+.formSubmit{
+    background-color: #eca393;
+    max-width: 357px;
+    width: 100%;
+    height: 58px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    font-size: 17.95px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 28px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    transform: scaleY(1.0028); /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+    border: none;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.blockContactAndContactForm{
+    padding-left: 60px;
+}
+.heading-text-contact{
+    font-family: 'Playfair Display',serif ;
+    color: #333333;
+    font-size: 26px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    line-height: 32px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    margin-top: 45px;
+}
+.use-form-text{
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 28px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+.ourContactBlock{
+    font-family: 'Playfair Display', serif;
+    min-width: 400px;
+    color: #333333;
+    font-size: 26px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    line-height: 32px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+
+.main-icon-block{
+    margin-top: -10px;
+}
+.icon-text{
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: center;
+
+}
+.icon-text img{
+    float: left;
+    padding-left: 90px;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+.icon-text p{
+    display: inline-block;
+    float: left;
+    padding-top: 35px;
+    margin-left: 15px;
+}
+.sponsor-image{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    padding-left: 120px;
+}
+/*end contact form section*/
+
+
+
+/*Start footer section*/
+.footerSection{
+    background-color: #eca393;
+}
+.footerMain{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 30px;
+    color: black;
+    font-size: 16px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    text-align: justify;
+}
+
+.footerMain li {
+    display: inline-block;
+    text-align: left;
+    /* эмуляция inline-block для IE6-7*/
+   display : inline;
+}
+.footerMain li.helper {
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+}
+li a{
+    color: #333333;
+
+}
+li a:hover{
+    color: #fdfdfd;
+    text-decoration: none;
+}
+
+.copyrate{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #333333;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: center;
+}
+/*end footer section*/
+
+.next{
+    background-color: #2aabd2;
+    height: 200px;
+}
+/*heading section*/
+.modal .formSubmit{
+    background: #f2d56f;
+    
+}
+.modal h5{
+    font-weight: 700;
+    font-size: 16px;
+}
+.modal form{
+        background-color: #eca393;
+}
+.modal-content{
+    min-width: 300px;
+    max-width: 417px;
+    width: 100%;
+    
+}
+
+.heading-container{
+    padding: 85px 0;
+}
+.heading-container .heading-tagline{
+    font-weight: 300;
+    text-align: center;
+    font-size: 20px;/* Приближение из-за подстановки шрифтов */
+}
+.heading-container .heading-separate{
+    background-color: #eca393;
+    width: 40px;
+    height: 6px;
+    margin: 25px auto;
+}
+.heading-container .section-heading{
+    font-family: 'Playfair Display', serif;
+    font-size: 54px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    text-align: center;
+}
+/*hover*/
+.hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+/*HEADER*/
+nav{
+    height: 89px;
+    background-color:  #eca393;
+}
+.menu-list{
+    width: 100%;
+    
+}
+.menu-list li{
+    height: 89px;
+    line-height: 89px;
+}
+.menu-list li a{
+    padding: 0;
+    text-transform: uppercase;
+    height: 89px;
+}
+.menu-list li a:hover{
+    color: #fff!important;
+}
+.navbar-brand{
+    display: none;
+}
+.logo-menu{
+    transform: rotate(0deg);
+    transition: .5s;
+}
+.logo-menu:hover{
+    transition: (.7s);
+    transform: rotate(360deg);
+}
+/*section.first-screen*/
+.first-screen{
+    min-height: 100vh;
+    background: url(../img/first-sc-bg.jpg);
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+.first-screen .title-site{
+    max-width: 90%;
+    top: 50%;
+    left: 50%;    
+    position: absolute;
+    transform: translate(-50%,-50%);    
+}
+.first-screen .shop-tagline{
+    font-size: 34px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 57px;
+}
+.first-screen .order-call-back{    
+    width: 291px;
+    height: 70px;
+    line-height: 70px;
+    color: #333;
+    margin: 0 auto;
+    margin-top: 120px;
+    font-size: 20px;
+    text-align: center;
+}
+/*catalogue*/
+.catalogue{
+    position: relative;
+    overflow: hidden;
+}
+.catalogue:before{
+    z-index: -1;
+    content: '';
+    left: 0;
+    top: -20px;
+    position: absolute;
+    display: block;
+    background: url(../img/left1.png)no-repeat;
+    background-size: contain;
+    width: 375px;
+    height: 375px;
+}
+.catalogue:after{
+    z-index: -1;
+    content: '';
+    right: 0;
+    top: -20px;
+    position: absolute;
+    display: block;
+    background: url(../img/right1.png)no-repeat;
+    background-size: contain;
+    width: 375px;
+    height: 375px;
+}
+.catalog-container .nav-pills .nav-item{
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #eca393;
+    border-radius: none;
+    padding: 0;
+}
+.catalog-container .nav-pills .nav-link{
+    height: 60px;
+    line-height: 60px;
+    padding: 0 15px;
+    text-align: center;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    color: #333;
+    border-radius: inherit;
+}
+.catalog-container .nav-pills .nav-link.active, .catalog-container .show>.nav-pills .nav-link{
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #eca393;
+    box-sizing: border-box;
+    background-color:  #eca393;
+    color: #fff;
+    border-radius: inherit;
+}
+.catalog-container .tab-content{
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #eca393;
+    box-sizing: border-box;
+    background-color:  #ffffff;
+    min-height: 896px;
+    padding-bottom: 50px;
+}
+.catalog-container .tab-content .tab-pane{
+    width: 100%;
+}
+/*product*/
+.catalog-container .tab-content .product-item{
+    width: 252px;
+    /*height: 440px;*/
+    margin: 0 auto;
+    margin-top: 71px;
+}
+.catalog-container .tab-content .product-item .title{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    padding-bottom: 16px;
+    text-align: center;
+}
+.catalog-container .tab-content .product-item .product-preview{
+    width: 252px;
+    height: 252px;
+    position: relative;
+    margin-bottom: 18px;
+}
+.catalog-container .tab-content .product-preview .product-border{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 231px;
+    height: 231px;
+    background: #eca393;
+}
+.catalog-container .tab-content .product-preview .product-photo{
+    width: 231px;
+    height: 231px;
+    bottom: 0;
+    right: 0;
+    border: 1px solid #eca393;
+    position: absolute;
+    background: #fff;
+    
+}
+.catalog-container .tab-content .product-item .product-option-name{
+    margin-bottom: 18px;
+    text-align: center;
+}
+.catalog-container .tab-content .product-item .product-option-atribute{
+    margin-bottom: 30px;
+}
+.catalog-container .tab-content .product-item .color .option-item{
+    width: 21px;
+    height: 21px;
+    margin: 0 11px;
+    display: block;
+    border: 1px solid red;
+}
+.catalog-container .tab-content .product-item .button-order{
+    width: 210px;
+    height: 52px;
+    line-height: 52px;
+    margin: 0 auto;
+    color: #333;
+    text-align: center;
+    margin-top: 30px;
+}
+/*Advantages*/
+.advantages .container{
+    max-width: 925px;
+}
+.advantages .advantages-description{
+    margin-bottom: 100px;
+}
+.advantages .advantages-description .description-image-container{
+    width: 358px;
+    height: 358px;
+    position: relative;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    
+}
+.advantages .advantages-description .description-image-container div{
+    width: 334px;
+    height: 334px;
+}
+.description-image-container .description-border{
+    background-color:  #eca393;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.description-image-container .description-image{
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+}
+.description-text-container p{
+    margin-bottom: 30px;
+}
+.description-text-container ul{
+    margin-bottom: 30px;
+}
+.advantages{
+    /*padding-bottom: 70px;*/
+}
+.advantages-item{
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+.advantages-item .title-item{
+    font-size: 26px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 28px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 40px;
+}
+.advantages-item .description-item{
+    line-height: 30px;
+}
+.advantages-item .image-item{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.advantages-item.left .description-content{
+    padding-left: 30px;
+}
+/*pay and delivery*/
+.pay-deliver{
+    padding-bottom: 80px;
+}
+.item-delivery-container{
+    max-width: 972px;
+    margin: 0 auto;
+}
+.item-delivery-container .pay-item{
+    max-width: 270px;
+    padding: 0 5px;
+    margin-bottom: 70px;
+}
+.item-delivery-container .pay-item.bottom{
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+.item-delivery-container .pay-separate{
+    padding-top: 100px;
+}
+.item-delivery-container .item-icon{
+    width: 153px;
+    height: 153px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.item-delivery-container .item-title{
+    font-weight: 700;
+    line-height: 28px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+.item-delivery-container .item-description{
+    line-height: 26px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+/*testimonials*/
+*{
+    /*border:  1px solid red!important;*/
+    box-sizing: border-box!important;
+}
+.testimonials{
+    min-height: 660px;
+    padding-bottom: 100px;
+    background: url(../img/reviews.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: -5px;
+    overflow: hidden;
+}
+.testimonials .heading-container .heading-separate{
+    background: #fff;
+}
+.slider-container .slide{
+    width: 100%;
+    max-width: 810px;
+    margin: 0 auto;
+}
+.slider-container .carousel-item{
+    min-height: 260px;
+}
+.slider-container .carousel-item-container{
+    max-width: 750px;
+    width: 100%;
+     margin: 0 auto;
+    height: 100%;
+}
+.slider-container .carousel-control-prev{
+    left: -50px;
+}
+.slider-container .carousel-control-next{
+    right: -50px;
+}
+.slider-container .carousel-control-prev-icon{
+    background-image: url(../img/sl-prev.png);
+}
+.slider-container .carousel-control-next-icon{
+    background-image: url(../img/sl-next.png);
+}
+.slider-container .carousel-indicators{
+    bottom: -50px;
+}
+.slider-container .carousel-indicators li{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: none;
+}
+.slider-container .carousel-indicators li.active{
+    width: 18px;
+    height: 18px;
+}
+.slider-container .carousel-control-next-icon, .slider-container .carousel-control-prev-icon{
+    height: 24px;
+}
+.carousel-item-container .photo-client{
+    width: 257px;
+    height: 257px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.carousel-item-container .review-name{
+    font-size: 26px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+}
+.carousel-item-container .review-description{
+    font-style: italic;
+    line-height: 28px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+body.modal-open{
+    overflow-x: hidden!important;
+    overflow-y: scroll;
+}
+.navbar{
+    padding: .5rem 1rem!important;
+}
+footer .footerSection{
+    padding: 15px 0;
+}
+.footerMain li{margin: 5px;}
+
+/*back-to-top*/
+/*START*/
+#back-top {
+    position: fixed;
+    bottom: 20px;
+    right: 3%;
+    z-index: 222;
+}
+#back-top a {
+    background-color: #eca393;
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-bottom: 7px;
+    border-radius: 3px;
+    position: relative;
+    opacity: .7;
+    transition: .5s;
+}
+#back-top a span {
+    background: url(../img/up.png);
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -10px 0 0 -10px;
+    background-size: contain;
+}
+/*media*/
+@media screen and (max-width: 992px){
+    .navbar-brand{
+        display: block;
+        margin: 0;
+    }
+    #navbarNav{
+        position: absolute;
+        top: 89px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background: rgba(236, 163, 147,.9);
+    }
+    .navbar-nav .nav-link{
+        font-weight: bold;
+    }
+    .logo-menu{
+        display: none;
+    }
+    
+    .pay-deliver .container{
+        max-width: 100%!important;
+    }
+    .item-delivery-container .pay-separate{
+        display: none;
+    }
+    
+    .item-delivery-container ul li{
+        
+        width: 33%;
+    }
+    .advantages{
+        padding-bottom: 0;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .slider-container .carousel-item{min-height: 400px;}
+}
+@media screen and (max-width: 768px){
+    .sponsor-image{
+        padding-left: 70px;
+    }
+    .first-screen .shop-heading{
+        font-size: 36px;
+    }
+    .item-delivery-container ul li{
+        width: 50%;
+    }
+    .item-delivery-container ul{
+        -ms-flex-pack: center!important;
+        justify-content: center!important;
+    }
+    .item-delivery-container .pay-item.bottom{
+        margin: 0;
+        margin-bottom: 70px;
+    }
+    
+}
+@media screen and (max-width: 660px){
+    .first-screen .shop-tagline{
+        font-size: 28px;
+    }
+    body{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .first-screen .shop-tagline{
+        margin-bottom: 20px;
+    }
+    .first-screen .shop-heading{
+        font-size: 32px;
+    }
+    .first-screen .order-call-back{
+        margin-top: 70px;
+    }
+    .heading-container{
+        padding: 15px 0;
+    }
+    .pay-deliver{
+        padding-bottom: 20px;
+    }
+    .advantages .advantages-description{
+        margin-bottom: 40px;
+    }
+    .catalogue:before,.catalogue:after{
+        width: 120px;
+        height: 120px;
+    }
+    .heading-container .section-heading{
+        font-size: 36px;
+    }
+    .blockContactAndContactForm{
+        padding-left: 15px!important;
+    }
+    .heading-container .heading-tagline{
+        font-size:17px;
+    }
+    .heading-container .section-heading{
+        font-size: 40px;
+    }
+    .sponsor-image{
+        padding-left: 20px;
+    }
+    .icon-text img{
+        padding-left: 40px;
+    }
+    .our-contact{
+        overflow: hidden;
+    }
+    .heading-text-contact,.use-form-text{
+        margin-left: -110px;
+    }
+    .inputCheck{
+        height: 40px;
+    }
+    .container-form .contactForm{
+        padding: 15px;
+    }
+    .formComment{
+        height: 80px;
+    }
+    form{
+        height: inherit;
+    }
+    .formSubmit{
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+    .first-screen .title-site{
+        top: 57%;
+    }
+}
+
+
+
+
+

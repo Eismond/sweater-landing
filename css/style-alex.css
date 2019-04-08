@@ -1,0 +1,218 @@
+/*--> Подключение шрифтов */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+/* <-- */
+
+
+/*contact form section start*/
+.contactMainBlock{
+    margin-bottom: 50px;
+}
+#contact{
+    background: url("../img/elka.jpg") no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+    
+
+}
+.heading-container{
+    margin: 55px 0;
+}
+.heading-container .heading-tagline{
+    font-weight: 300;
+    text-align: center;
+    font-size: 20px;/* Приближение из-за подстановки шрифтов */
+}
+.heading-container .heading-separate{
+    background-color: #eca393;
+    width: 40px;
+    height: 6px;
+    margin: 20px auto;
+}
+.heading-container .section-heading{
+    font-family: 'Playfair Display', serif;
+    font-size: 54px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    text-align: center;
+    margin-top: -10px;
+}
+form{
+    margin-top: 40px;
+    max-width: 417px;
+    width: 100%;
+    height: 557px;
+}
+
+.container-form .contactForm{
+    border: 1px solid #eca393 ;
+    margin: 0px auto;
+    /*margin-right: 50px;*/
+    margin-right: 0;
+    padding: 30px;
+}
+.inputCheck{
+    border: 1px solid #eca393 ;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    max-width: 357px;
+    width: 100%;
+    height: 59px;
+    font-family: 'Open Sans', sans-serif;
+    color: #b1b1b1;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 28px;/* Приближение из-за подстановки шрифтов */
+    padding-left: 15px;
+
+}
+.formComment{
+    border: 1px solid #eca393 ;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+    padding-left: 15px;
+    padding-top: 10px;
+    max-width: 357px;
+    width: 100%;
+    height: 159px;
+    font-family: 'Open Sans', sans-serif;
+    color: #b1b1b1;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 28px; /* Приближение из-за подстановки шрифтов */
+    resize: none;
+}
+.formSubmit{
+    background-color: #eca393;
+    max-width: 357px;
+    width: 100%;
+    height: 58px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    font-size: 17.95px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 28px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    transform: scaleY(1.0028); /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+    border: none;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.blockContactAndContactForm{
+    padding-left: 60px;
+}
+.heading-text-contact{
+    font-family: 'Playfair Display',serif ;
+    color: #333333;
+    font-size: 26px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    line-height: 32px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    margin-top: 45px;
+}
+.use-form-text{
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 28px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+.ourContactBlock{
+    font-family: 'Playfair Display', serif;
+    min-width: 400px;
+    color: #333333;
+    font-size: 26px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 900;
+    line-height: 32px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+
+.main-icon-block{
+    margin-top: -10px;
+}
+.icon-text{
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: center;
+
+}
+.icon-text img{
+    float: left;
+    padding-left: 90px;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+.icon-text p{
+    display: inline-block;
+    float: left;
+    padding-top: 35px;
+    margin-left: 15px;
+}
+.sponsor-image{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    padding-left: 120px;
+}
+/*end contact form section*/
+
+
+
+/*Start footer section*/
+.footerSection{
+    background-color: #eca393;
+}
+.footerMain{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 30px;
+    color: black;
+    font-size: 16px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    text-align: justify;
+}
+
+.footerMain li {
+    display: inline-block;
+    text-align: left;
+    /* эмуляция inline-block для IE6-7*/
+   display : inline;
+}
+.footerMain li.helper {
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+}
+li a{
+    color: #333333;
+
+}
+li a:hover{
+    color: #fdfdfd;
+    text-decoration: none;
+}
+
+.copyrate{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #333333;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: center;
+}
+/*end footer section*/
+
+.next{
+    background-color: #2aabd2;
+    height: 200px;
+}
